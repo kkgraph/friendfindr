@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tables Page</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+
+</head>
+
+<body>
+  <div class="center ">
+    <div id="header-div"></div>
+   <center> <h1 class="title">Friend Finder</h1> </center>
+   <h2>Survey Questions</h2>
+    <br>
+    <h2>About you</h2>
+    <div class="about-div">
+      <p>Name (Required)</p>
+      <input class="about-text" id="name_txtbox" type="text">
+      <p>Link to Photo Image (Required)
+      </p>
+      <input class="about-text" id="photo_txtbox" type="text">
+    </div>
+    <br>
+    <br>
+    <div id="survey" class="d-flex p-2">
+      <form>
+        <h3>Question 1.</h3>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+
+        <select name="Question 1" id="question1" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <BR>
+
+        <h3>Question 2.</h3>
+        <p>Generally speaking, you rely more on your experience than your imagination.
+        </p>
+        <select name="Question 2" id="question2" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 3.</h3>
+        <p>You find it easy to stay relaxed and focused even when there is some pressure.
+        </p>
+        <select name="Question 3" id="question3" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 4.</h3>
+        <p>You rarely do something just out of sheer curiosity.
+        </p>
+        <select name="Question 4" id="question4" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 5.</h3>
+        <p>People can rarely upset you.
+        </p>
+        <select name="Question 5" id="question5" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 6.</h3>
+        <p>It is often difficult for you to relate to other people’s feelings.
+        </p>
+        <select name="Question 6" id="question6" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 7.</h3>
+        <p>In a discussion, truth should be more important than people’s sensitivities.
+        </p>
+        <select name="Question 7" id="question7" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 8.</h3>
+        <p>You rarely get carried away by fantasies and ideas.
+        </p>
+        <select name="Question 8" id="question8" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 9.</h3>
+        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </p>
+        <select name="Question 9" id="question9" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+
+        <h3>Question 10.</h3>
+        <p>You feel more energetic after spending time with a group of people.
+        </p>
+        <select name="Question 10" id="question10" class="form-control">
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br>
+      </form>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> Best Match
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Match</p>
+            <p id="name_p">Name:</p>
+            <img id ="match_img" src="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="/survey"><button class="btn btn-lg btn-primary" id="submit_btn"><span class="fa fa-list-alt"></span>
+          Submit</button></a>
+    </div>
+  </div>
+</body>
+
+<script>
+  
+  var newPerson;
+
+  $("#submit_btn").click(function () {
+    event.preventDefault();
+    newPerson = {
+      name: $("#name_txtbox").val().trim(),
+      photo: $("#photo_txtbox").val().trim(),
+      scores: [
+        parseInt($("#question1").val().trim()),
+        parseInt($("#question2").val().trim()),
+        parseInt($("#question3").val().trim()),
+        parseInt($("#question4").val().trim()),
+        parseInt($("#question5").val().trim()),
+        parseInt($("#question6").val().trim()),
+        parseInt($("#question7").val().trim()),
+        parseInt($("#question8").val().trim()),
+        parseInt($("#question9").val().trim()),
+        parseInt($("#question10").val().trim())
+      ]
+    };
+    $.post("/api/friends", newPerson, function (data) {
+
+    console.log(data);
+    $("#name_p").text("Name: " + data.name);
+    $("#match_img").attr("src",data.photo);
+    });
+    $("#resultsModal").modal("show");
+  });
+  
+</script>
+<style>
+  #survey {
+    margin-left: 0px;
+    border-bottom: 0px;
+    border-left: 0ch;
+    border-right: 0px;
+    border-top: 0.8px;
+    border-color: goldenrod;
+    border-style: outset;
+  }
+  .title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 8px;
+    margin-left: 0px;
+    border-bottom: 0.8px;
+    border-left: 0ch;
+    border-right: 0px;
+    border-top: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-color: silver;
+    border-style: outset;
+    background-color: blue;
+    color:white;
+    align-content: center;
+    height: 200px;
+    padding-top:75px;
+  }
+#submit_btn {
+background-color: blue;
+border: blue;
+width:100%;
+}
+  .center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    min-width: 420px;
+    
+  }
+img {
+  width:100%;
+  height: 100%;
+  margin: auto;
+}
+  .about-text {
+    width: 100%;
+  }
+.form-control {
+  width:200px;
+  margin:auto;
+  float: left;
+}
+</style>
+
+<!-- this file was missing -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+  integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+</html>
